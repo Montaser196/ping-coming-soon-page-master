@@ -1,0 +1,133 @@
+/*----------------- GOOGLE FONT ------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap');
+/*---------------------- VARIABLE CSS FONT ----------------*/
+*{
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    outline: none;
+    
+}
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --Pale: hsl(223, 100%, 88%);
+    --Light: hsl(354, 100%, 66%);
+  }
+
+.content{
+    text-align: center;
+    padding-top: 30px;
+}
+.parag{
+    font-size: 40px;
+}
+.content .parag .we{
+    opacity:50%;
+}
+.content .parag .soon{
+    font-weight: bolder;
+}
+.input_btn{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin-top: 20px;
+    
+}
+.myForm{
+    display :flex;
+    justify-content:center;
+}
+.input_btn #email_addr{
+    color: black;
+    border: 1px solid var(--Pale);
+    border-radius: 25px;
+    height: 40px;
+    width:360px;
+    padding:0 20px;
+
+}
+.input_btn #email_addr.invalid{
+    border-color: var(--Light);
+}
+.input_btn #email_addr::placeholder{
+    color: var(--Pale);
+}
+small#text{
+    color: var(--Light);
+    margin-left: -145px;
+}
+.input_btn  .btn{
+    background-color: var(--blue);
+    color: white;
+    text-shadow: 0.5px 0.5px;
+    box-shadow: 2px 2px 2px var(--blue);
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    height: 44px;
+    width:160px;
+    margin-left: 10px;
+    
+}
+.picture{
+position: relative;
+text-align: center;
+}
+.picture img{
+    width: 80%;
+    min-width: 280px;
+    max-width: 640px;
+}
+.icon{
+    padding-top: 40px;
+    text-align: center;
+    color: var(--blue);
+}
+.icon .fab{
+    padding: 5px 5px 5px 5px;
+    border: 1px solid var(--Pale);
+    border-radius: 100%;
+}
+.icon .fab:hover{
+    color: white;
+    background-color:var(--blue);
+    cursor: pointer;
+}
+
+.footer{
+    text-align: center;
+    padding-top:20px;
+    padding-bottom: 70px;
+    opacity: 50%;
+}
+
+@media (max-width: 375px){
+    .content .parag{
+     font-size: 25px;
+ } 
+ .input_btn #email_addr{
+     width:250px;
+     height: 50px;
+ }
+ .input_btn  .btn{
+     height: 50px;
+     width:290px;
+     margin-top:15px;
+     margin-left: auto;
+ }
+ .picture{
+ position: position;
+ text-align: center;
+ padding-left: 5%;
+ padding-right:5%;
+ }
+ .myForm{
+    display :block;
+    
+}
+small#text{
+    color: var(--Light);
+    margin-left: -45px;
+    
+}
+ }
